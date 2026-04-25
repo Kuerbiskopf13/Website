@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>International Affairs Agency // CLASSIFIED</title>
+
+<style>
+*{box-sizing:border-box;}
+
+body {
+    margin: 0;
+    background: radial-gradient(circle at center, #000 40%, #020b06 100%);
+    color: #00ff88;
+    font-family: "Courier New", monospace;
+    overflow-x: hidden;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(0deg, transparent, rgba(0,255,136,0.06), transparent);
+    animation: scan 4s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes scan {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100%); }
+}
+
+header {
+    padding: 45px 20px 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    letter-spacing: 6px;
+    text-shadow: 0 0 10px #00ff88;
+    animation: glow 2.5s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 5px #00ff88; }
+    to { text-shadow: 0 0 25px #00ff88; }
+}
+
+header p {
+    margin-top: 8px;
+    letter-spacing: 2px;
+    opacity: 0.75;
+    text-align:center;
+}
+
+nav {
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+    margin:10px 0 30px;
+}
+
+nav button {
+    background: rgba(0,255,136,0.25);
+    border:1px solid #00ff88;
+    color:#00ff88;
+    padding:10px 16px;
+    border-radius:14px;
+    cursor:pointer;
+}
+
+nav button:hover {
+    transform:scale(1.08);
+    box-shadow:0 0 18px #00ff88;
+}
+
+nav button.active{
+    background: rgba(0,255,136,0.5);
+}
+
+main{
+    display:flex;
+    justify-content:center;
+}
+
+section{
+    width:min(900px,85%);
+    padding:28px;
+    margin-bottom:30px;
+    border-radius:18px;
+    border:1px solid rgba(0,255,136,0.35);
+    background:rgba(0,0,0,0.88);
+    display:none;
+}
+
+section.active{display:block;}
+
+h2{border-bottom:1px solid rgba(0,255,136,0.5);padding-bottom:8px;}
+
+p{line-height:1.7;text-align:justify;}
+
+audio{display:none;}
+
+footer{text-align:center;opacity:0.4;padding:20px;}
+
+</style>
+</head>
+<body>
+
+<audio id="audio" loop>
+    <source src="ambience.mp3" type="audio/mpeg">
+</audio>
+
+<header>
+<h1>INTERNATIONAL AFFAIRS AGENCY</h1>
+<p><strong>CLASSIFIED GLOBAL DIVISION // ACCESS LEVEL 4</strong></p>
+</header>
+
+<nav>
+<button class="active" onclick="openTab('konzept',this)">Konzept</button>
+<button onclick="openTab('leitung',this)">Leitung</button>
+<button onclick="openTab('befehl',this)">Befehlskette</button>
+<button onclick="openTab('geheim',this)">Geheimhaltung</button>
+<button onclick="openTab('immun',this)">Immunität</button>
+</nav>
+
+<main>
+
+<section id="konzept" class="active">
+<h2>Konzept</h2>
+<p>
+Die International Affairs Agency (IAA) ist eine hochentwickelte, supranationale Sicherheits- und Analyseorganisation, die unabhängig von klassischen staatlichen Strukturen operiert. Ihr primärer Auftrag besteht darin, globale Stabilität in politisch instabilen, wirtschaftlich fragilen und sicherheitspolitisch kritischen Regionen sicherzustellen. Die Organisation arbeitet auf Grundlage einer permanenten Echtzeit-Datenanalyse globaler Ereignisse, die durch ein Netzwerk aus Sensorik, Geheimquellen und algorithmischer Auswertung gespeist wird. Jede Entwicklung wird in Sekundenbruchteilen bewertet, um potenzielle Eskalationen frühzeitig zu erkennen und zu neutralisieren. Die IAA agiert dabei nicht reaktiv, sondern präventiv und strategisch vorausschauend. Entscheidungen werden durch ein internes Risikomodell getroffen, das geopolitische, militärische und wirtschaftliche Faktoren kombiniert. Die Organisation unterliegt keiner nationalen Gesetzgebung und operiert vollständig autonom im Sinne globaler Stabilität.
+</p>
+</section>
+
+<section id="leitung">
+<h2>Leitung</h2>
+<p>
+Die Leitung der IAA besteht aus einem vollständig anonymisierten Direktorat, dessen Mitglieder weder öffentlich bekannt noch identifizierbar sind. Jeder operative Zugriff erfolgt über verschlüsselte Identitätsprotokolle, die keine Rückverfolgung auf reale Personen zulassen. Die Führungsstruktur ist nicht hierarchisch im klassischen Sinn, sondern basiert auf einem verteilten Entscheidungsnetzwerk. Dieses Netzwerk analysiert globale Datenströme kontinuierlich und trifft Entscheidungen auf Basis mathematischer Risikomodelle. Menschliche Faktoren wie Emotionen, politische Ideologien oder wirtschaftliche Interessen werden vollständig ausgeschlossen. Stattdessen erfolgt eine rein datenbasierte Steuerung aller Operationen. Das Direktorat greift nur in Situationen ein, in denen globale Stabilität unmittelbar gefährdet ist oder staatliche Systeme ihre Handlungsfähigkeit verlieren.
+</p>
+</section>
+
+<section id="befehl">
+<h2>Befehlskette</h2>
+<p>
+Die IAA unterliegt formal einer staatlichen Kontrollinstanz, besitzt jedoch im Rahmen internationaler Notfallprotokolle die Befugnis zur temporären operativen Übernahme. Diese Übernahme erfolgt ausschließlich in Situationen systemischer Instabilität, einschließlich Regierungsversagen, weitreichender Korruption oder dem vollständigen Zusammenbruch staatlicher Infrastruktur. Die Aktivierung erfolgt automatisch durch definierte Schwellenwerte im globalen Risikomodell. Während dieser Phase übernimmt die IAA die vollständige operative Kontrolle über sicherheitsrelevante Strukturen. Die Maßnahme ist strikt zeitlich begrenzt und endet automatisch nach Wiederherstellung funktionsfähiger staatlicher Ordnung. Anschließend erfolgt die vollständige Rückübertragung der Befugnisse.
+</p>
+</section>
+
+<section id="geheim">
+<h2>Geheimhaltung</h2>
+<p>
+Die IAA nutzt ein mehrstufiges Klassifikationssystem zur Verwaltung sämtlicher Informationen. Daten werden in operative, strategische und kritische Sicherheitsstufen unterteilt. Jede Stufe besitzt individuell definierte Zugriffskontrollen, die strikt überwacht werden. Alle Systemzugriffe werden in Echtzeit protokolliert, analysiert und auf Anomalien geprüft. Unautorisierte Zugriffsversuche führen zu sofortigen Gegenmaßnahmen, einschließlich Isolation betroffener Netzsegmente und Sperrung relevanter Knotenpunkte. Die gesamte Infrastruktur ist physisch und digital von externen Netzwerken getrennt. Ziel dieses Systems ist die absolute Kontrolle über sensible Informationen sowie die vollständige Vermeidung von Datenlecks oder externen Manipulationen.
+</p>
+</section>
+
+<section id="immun">
+<h2>Immunität</h2>
+<p>
+Agenten der IAA verfügen über eine missionsgebundene Einsatzimmunität, die ausschließlich während aktiver Operationen gültig ist. Diese Immunität dient der effizienten Durchführung hochsensibler Operationen in zeitkritischen und gefährlichen Umgebungen. Sie ermöglicht operative Entscheidungsfreiheit ohne Verzögerung durch administrative oder rechtliche Prozesse. Die Immunität ist strikt an die jeweilige Mission gebunden und endet automatisch nach deren Abschluss. Jede Handlung während dieser Phase wird vollständig dokumentiert und nachträglich überprüft. Missbrauch oder Überschreitung der definierten Befugnisse führt zu internen Untersuchungsprotokollen und kann zur dauerhaften Deaktivierung operativer Zugänge führen.
+</p>
+</section>
+
+</main>
+
+<footer>CLASSIFIED SYSTEM UI // IAA CORE INTERFACE</footer>
+
+<script>
+function openTab(id,btn){
+    document.querySelectorAll('section').forEach(s=>s.classList.remove('active'));
+    document.querySelectorAll('nav button').forEach(b=>b.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    btn.classList.add('active');
+}
+
+window.addEventListener('click',()=>{
+    document.getElementById('audio').play().catch(()=>{});
+});
+</script>
+
+</body>
+</html>
